@@ -36,45 +36,50 @@ body {
     color: var(--greenColor);
 }
 
-.login {
-    background-color: var(--greenColor);
-}
-
-.login, .reg {
-    border-radius: 20px;
-    padding: 15px;
-    width: 500px;
+.input {
     display: flex;
     justify-content: center;
-    text-align: center;
-    cursor: pointer;
-    transition: ease 0.5s;
+    align-items: center;
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 20px;
 }
 
-.login:hover, .reg:hover{
+input {
+    font-size: 1.5rem;
+    padding: 10px 0;
+    width: 90%;
+    border: none;
+    outline: none;
+}
+
+.reg {
+    width: 500px;
+    background-color: var(--greenColor);
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: ease 0.5s;
+}
+
+.reg:hover{
     transform: scale(1.01);
 }
 
-.login button {
-    background-color: inherit;
-    color: white;
-    user-select: none;
-}
-
-.reg button{
-    color: var(--greenColor);
-    background-color: white;
-    user-select: none;
-}
-
-.login button, .reg button{
+#btnReg{
     font-size: 1.5rem;
-    border: none;
+    color: white;
+    background-color: inherit;
     cursor: inherit;
+    border: none;
 }
 
 @media screen and (max-width: 450px) {
-    .login, .reg{
+    .reg, .input{
         width: 340px;
     }
 }
+
