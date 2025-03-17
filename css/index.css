@@ -43,17 +43,20 @@ body {
     border-radius: 20px;
     padding: 15px;
     width: 500px;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     text-align: center;
     cursor: pointer;
+    transition: ease 0.5s;
 }
 
-#btnReg, #btnLogin{
-    color: white;
+.login:hover, .reg:hover{
+    transform: scale(1.01);
+}
+
+.login button {
     background-color: inherit;
-    cursor: pointer;
+    color: white;
 }
 
 .reg button{
@@ -64,6 +67,6 @@ body {
 .login button, .reg button{
     font-size: 1.5rem;
     border: none;
-    
+    cursor: inherit;
 }
 
