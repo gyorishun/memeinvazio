@@ -71,6 +71,7 @@ body {
     font-size: 1.5rem;
     border: none;
     cursor: inherit;
+    user-select: none;
 }
 
 @media screen and (max-width: 450px) {

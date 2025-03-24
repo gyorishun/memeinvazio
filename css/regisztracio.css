@@ -75,6 +75,7 @@ input {
     background-color: inherit;
     cursor: inherit;
     border: none;
+    user-select: none;
 }
 
 @media screen and (max-width: 450px) {
