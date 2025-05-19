@@ -1,5 +1,5 @@
 :root {
-    --greenColor: #17BD3E;   
+    --greenColor: #17BD3E;
 }
 
 * {
@@ -54,33 +54,31 @@ input {
 }
 
 .reg {
-    width: 500px;
     background-color: var(--greenColor);
-    cursor: pointer;
+    width: 500px;
     border-radius: 20px;
+    cursor: pointer;
     padding: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: ease 0.5s;
+    transition: ease 0.5s;
 }
 
-.reg:hover{
+.reg:hover {
     transform: scale(1.01);
 }
 
-#btnReg{
+.reg button {
     font-size: 1.5rem;
     color: white;
     background-color: inherit;
-    cursor: inherit;
     border: none;
-    user-select: none;
+    cursor: inherit;
 }
 
-@media screen and (max-width: 450px) {
-    .reg, .input{
+@media screen and (max-width: 500px) {
+    .reg, .input {
         width: 340px;
     }
 }
-

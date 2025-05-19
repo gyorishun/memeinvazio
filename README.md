@@ -1,1 +1,1 @@
-olvass el
+memeinvázió frontend kódjának fejlesztése

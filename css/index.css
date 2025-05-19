@@ -1,5 +1,5 @@
 :root {
-    --greenColor: #17BD3E;   
+    --greenColor: #17BD3E;
 }
 
 * {
@@ -46,36 +46,33 @@ body {
     width: 500px;
     display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     cursor: pointer;
     transition: ease 0.5s;
 }
 
-.login:hover, .reg:hover{
+.login:hover, .reg:hover {
     transform: scale(1.01);
 }
 
 .login button {
-    background-color: inherit;
     color: white;
-    user-select: none;
+    background-color: inherit;
 }
 
-.reg button{
+.reg button {
     color: var(--greenColor);
     background-color: white;
-    user-select: none;
 }
 
-.login button, .reg button{
+.login button, .reg button {
     font-size: 1.5rem;
     border: none;
     cursor: inherit;
-    user-select: none;
 }
 
 @media screen and (max-width: 450px) {
-    .login, .reg{
+    .login, .reg {
         width: 340px;
     }
 }

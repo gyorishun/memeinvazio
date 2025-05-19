@@ -1,8 +1,9 @@
-:root{
+/* ---- alap beállítások ---- */
+:root {
     --text-color: #17BD3E;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,6 +15,7 @@ html {
     background-color: silver;
 }
 
+/* ---- a fejléc a menüvel ---- */
 header {
     background-color: white;
     padding: 1.25rem 1.875rem;
@@ -22,19 +24,20 @@ header {
     align-items: center;
 }
 
-.menu-logo{
+/* logó bal oldalt */
+.menu-logo {
     font-size: 2rem;
     font-weight: 600;
     text-transform: uppercase;
     user-select: none;
 }
 
-.menu-logo-green{
+.menu-logo-green {
     color: var(--text-color);
 }
 
+/* menü ikonok jobb oldalt alapállapotban */
 nav {
-    user-select: none;
     display: flex;
     gap: 2rem;
     font-size: 2rem;
@@ -48,25 +51,24 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50px;
+    border-radius: 50%;
     transition: ease 0.5s;
 }
 
-nav a:hover{
+nav a:hover {
     transform: scale(1.1);
 }
 
-
-
-.icon-home{
+.icon-home {
     background-color: silver;
-}
+} 
 
 .icon-logout {
     background-color: red;
     color: white;
 }
 
+/* hambuger menü */
 .hamburger-menu {
     background-color: white;
     width: 30px;
@@ -78,7 +80,7 @@ nav a:hover{
     flex-direction: column;
 }
 
-.hamburger-menu span{
+.hamburger-menu span {
     display: block;
     background-color: black;
     height: 4px;
@@ -86,10 +88,67 @@ nav a:hover{
     border-radius: 2px;
 }
 
-.menu-toggle{
+.menu-toggle {
     display: none;
 }
 
-.menu-toggle:checked~nav{
+.menu-toggle:checked~nav {
     display: flex;
+}
+
+/* --- hamburger menü 768px-től --- */
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        background-color: white;
+        padding: 10px;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        font-size: 1.5rem;
+        display: none;
+    }
+}
+
+/* --- hozzáadás plus gomb ---  */
+.fixed {
+    position: fixed;
+    right: 30px;
+    top: 70%;
+    background-color: var(--text-color);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: ease 0.5s;
+}
+
+.fixed:hover {
+    transform: scale(1.1);
+}
+
+.fixed i {
+    color: white;
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .fixed {
+        width: 40px;
+        height: 40px;
+    }
+
+    .fixed i {
+        font-size: 2rem;
+    }
 }
